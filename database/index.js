@@ -1,11 +1,11 @@
 const Sequelize = require("sequelize");
 const config = require("../config/database.js");
 
-const Pessoa = require("../model/Pessoa");
+const Pessoa = require("../models/pessoa");
 
 const connection = new Sequelize(config);
 
 Pessoa.init(connection);
-Pessoa.associate(connection.model);
+Pessoa.associate(connection.models);
 
 module.exports = connection;

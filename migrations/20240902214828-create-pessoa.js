@@ -14,11 +14,11 @@ module.exports = {
         allowNull: false,
       },
       Cpf: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.BIGINT, 
         allowNull: false,
       },
       Telefone: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.BIGINT,
         allowNull: false,
       },
     });
@@ -27,4 +27,4 @@ module.exports = {
   down: async (queryInterface, Sequelize) => {
     await queryInterface.dropTable("pessoas");
   },
-};""
+};
