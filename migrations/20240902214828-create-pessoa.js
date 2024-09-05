@@ -14,11 +14,11 @@ module.exports = {
         allowNull: false,
       },
       Cpf: {
-        type: Sequelize.BIGINT, 
+        type: Sequelize.STRING, 
         allowNull: false,
       },
       Telefone: {
-        type: Sequelize.BIGINT,
+        type: Sequelize.STRING,
         allowNull: false,
       },
     });
